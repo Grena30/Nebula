@@ -1,0 +1,10 @@
+.car-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-cars {
+  margin-top: 2rem;
+}

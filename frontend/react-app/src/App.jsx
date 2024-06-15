@@ -1,9 +1,12 @@
+import CarList from './components/CarList'
 import './css/App.css'
 
 function App() {
 
   return (
-    <h1>Hello World</h1>
+    <div className="app-container">
+     <CarList /> 
+    </div>
   )
 }
 
