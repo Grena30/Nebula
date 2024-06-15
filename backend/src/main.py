@@ -33,8 +33,10 @@ def llm_prompt(car_filters, additional=None):
   prompt_message += "<perfomance> Insert performance from 0-100 in seconds here</perfomanec>\n"
   prompt_message += "<range> Insert range for consumption here</range>\n"
   prompt_message += "<additional> Insert any additional info here</additional>\n"
-  prompt_message += "If you cannot specify exactly one category then approximate. If you have any additional info for each car add the rest of the info to the additional part if not then leave empty"
-  prompt_message += """Here is an example: - Brand: BMW, Model: 530i xDrive 
+  prompt_message += "Important if you cannot specify exactly one category then approximate or give a range of values instead of not available. If you have any additional info for each car add the rest of the info to the additional part if not then leave empty\n"
+  prompt_message += "Important look up cars manufacturer website for the most accurate information\n"
+  prompt_message += "If you cannot find the price and random one, but don't specify whether it is random\n"
+  prompt_message += """Here is an example:
   <brand>Brand: BMW</brand>
   <model>Model: 530i xDrive</model>
   <body type>Body Type: Sedan</body type>
@@ -63,6 +65,6 @@ def llm_prompt(car_filters, additional=None):
       print(event.text, end='')
 
 
-car_filters = {"Brand": "BMW", "Body type": "Sedan", "Powertrain": "Diesel", "Class": "Luxury"}
+car_filters = {"Brand": "Honda"}
 additional = "Suitable for 2 kids"
 llm_prompt(car_filters, additional)
