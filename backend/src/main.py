@@ -39,7 +39,7 @@ def llm_prompt(car_filters, additional=None):
   # prompt_message += "If you cannot find the price and random one, but don't specify whether it is random\n"
   prompt_message += """Here is an example:
   <brand>Brand: BMW</brand>
-  <model>Model: 530i xDrive</model>
+  <model>Model: series5-sedan</model>
   <body type>Body Type: Sedan</body type>
   <manufacturing year>Manufacturing Year: 2024</manufacturing year>
   <class>Class: Luxury</class>
