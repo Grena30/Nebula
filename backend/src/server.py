@@ -1,14 +1,20 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 
+app = Flask(__name__)
+CORS(app, resources={r"/*": {"origins": "*"}})
 
-class Server:
-    def __init__(self):
-        self.app = Flask(__name__)
+@app.route('/api/search', methods=['POST'])
+def search():
+    data = request.get_json()
+    prompt = "Show me cars that satisfy the following criteria: "
 
-        self.app.add_url_rule('/', 'index', self.index, methods=['GET'])
+    for key, value in data.items():
+        if key != "additional":
+            prompt += f"{key} is {value}, "
+        else:
+            prompt += f" with additional requirements being: {value}"
 
-        self.app.run(host='0.0.0.0', port=5000)
+    # process the data for the model
 
-
-    def index(self):
-        return jsonify({'message': 'Hello World!'})
+    return ...
