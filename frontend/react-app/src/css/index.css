@@ -19,3 +19,8 @@ body {
   background-color: var(--background-color);
   color: var(--primary-color);
 }
+
+.container {
+  width:80vw;
+  margin: 0 auto;
+}
