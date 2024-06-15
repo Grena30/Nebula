@@ -28,10 +28,10 @@ def llm_prompt(car_filters, additional=None):
   prompt_message += "<class> Insert class here</class>"
   prompt_message += "<price> Insert here price </price>"
   prompt_message += "<powertrain> Insert powertrain here</powertrain>\n"
-  # prompt_message += "<drive system> Insert drive system here</drive system>\n"
-  # prompt_message += "<transmission type> Insert transmission type here</transmissison type>\n"
-  # prompt_message += "<perfomance> Insert performance from 0-100 in seconds here</perfomanec>\n"
-  # prompt_message += "<range> Insert range for consumption here</range>\n"
+  prompt_message += "<drive system> Insert drive system here</drive system>\n"
+  prompt_message += "<transmission type> Insert transmission type here</transmissison type>\n"
+  prompt_message += "<perfomance> Insert performance from 0-100 in seconds here</perfomanec>\n"
+  prompt_message += "<range> Insert range for consumption here</range>\n"
   prompt_message += "<additional> Insert any additional info here</additional>\n"
   # prompt_message += "Important if you cannot specify exactly one category then approximate or give a range of values instead of not available. If you have any additional info for each car add the rest of the info to the additional part if not then leave empty\n"
   prompt_message += "Important! look up cars manufacturer website, or official dealer data for the most accurate information, search different kind of sources in order to find all the information\n"
@@ -60,6 +60,6 @@ def llm_prompt(car_filters, additional=None):
       print(event.text, end='')
 
 
-car_filters = {"Brand": "Mercedes", "Powertrain": "Electric"}
+car_filters = {"Brand": "Mercedes"}
 # additional = "Suitable for 2 kids"
 llm_prompt(car_filters)

@@ -4,6 +4,7 @@
   --background-color: #EDF2F4;
   --accent-color: #EF233C;
   --accent-color-dark: #D90429;
+  --accent-color-light: #eb5365; 
 
   --primary-font: "Poppins", sans-serif;
 }
@@ -18,4 +19,10 @@
 body {
   background-color: var(--background-color);
   color: var(--primary-color);
+  overflow-x: hidden;
+}
+
+.container {
+  width:80vw;
+  margin: 0 auto;
 }
