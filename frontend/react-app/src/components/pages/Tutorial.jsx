@@ -1,4 +1,4 @@
-import "../css/Tutorial.css";
+import "../../css/Tutorial.css";
 
 const Tutorial = () => {
   return (
