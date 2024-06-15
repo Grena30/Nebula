@@ -20,7 +20,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
   cursor: pointer;
   padding: 2rem;
   font-weight: 600;
@@ -64,4 +63,16 @@
   font-size: 1rem;
   font-weight: 400;
   max-width:70%;
+}
+
+.info-item {
+  margin-bottom: 1rem;
+}
+
+.info-a {
+  color: var(--background-color);
+}
+
+.info-b {
+  color: var(--accent-color);
 }
