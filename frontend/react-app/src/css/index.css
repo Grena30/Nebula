@@ -1,0 +1,21 @@
+:root {
+  --primary-color: #2B2D42;
+  --secondary-color: #8D99AE;
+  --background-color: #EDF2F4;
+  --accent-color: #EF233C;
+  --accent-color-dark: #D90429;
+
+  --primary-font: "Poppins", sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--primary-font);
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+}
