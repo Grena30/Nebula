@@ -1,9 +1,13 @@
+import Tutorial from './components/Tutorial'
 import './css/App.css'
 
 function App() {
 
   return (
-    <h1>Hello World</h1>
+    <div className="app-container">
+      <Tutorial />
+      <h2>asdf</h2>
+    </div>
   )
 }
 

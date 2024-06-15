@@ -1,0 +1,28 @@
+#tutorial {
+  background: linear-gradient(to right, var(--accent-color-light), #9907facc), url('../assets/tutorial_3.png') no-repeat center center/cover;
+  color: var(--background-color);
+  height: 100vh;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tutorial-title {
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+}
+
+.tutorial-list-item {
+  font-size: 1.75rem;
+  z-index: 2;
+  position: relative;
+}
+
+.title-accent {
+  color: var(--accent-color);
+  background-color: var(--background-color);
+  border-radius: 5px;
+  padding: 0 0.5rem;
+}
