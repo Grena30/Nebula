@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import PropTypes from "prop-types";
 import "../css/ChoicePrompt.css";
 
@@ -27,7 +27,13 @@ function ChoicePrompt({ optionA, optionB, infoA, infoB }) {
           onKeyDown={(e) => handleKeyDown(e, "A")}
         >
           {optionA}
-          {selectedChoice === "A" && <div className="info">{infoA}</div>}
+          {selectedChoice === "A" && (
+            <ul className="info info-a">
+              {infoA.map((item, index) => (
+                <li className="info-item" key={index}>{item}</li>
+              ))}
+            </ul>
+          )}
         </div>
         <div
           className="choice choice-b"
@@ -37,7 +43,13 @@ function ChoicePrompt({ optionA, optionB, infoA, infoB }) {
           onKeyDown={(e) => handleKeyDown(e, "B")}
         >
           {optionB}
-          {selectedChoice === "B" && <div className="info">{infoB}</div>}
+          {selectedChoice === "B" && (
+            <ul className="info info-b">
+              {infoB.map((item, index) => (
+                <li className="info-item" key={index}>{item}</li>
+              ))}
+            </ul>
+          )}
         </div>
       </div>
     </div>
@@ -47,8 +59,8 @@ function ChoicePrompt({ optionA, optionB, infoA, infoB }) {
 ChoicePrompt.propTypes = {
   optionA: PropTypes.string.isRequired,
   optionB: PropTypes.string.isRequired,
-  infoA: PropTypes.string.isRequired,
-  infoB: PropTypes.string.isRequired,
+  infoA: PropTypes.array.isRequired,
+  infoB: PropTypes.array.isRequired,
   customStyles: PropTypes.object,
 };
 
