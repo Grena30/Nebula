@@ -22,7 +22,9 @@ function Navbar() {
             </li>
           </ul>
           <div className="navbar-btn">
-            <button>Shop</button>
+            <Link to="/cars">
+              <button>Shop</button>
+            </Link>
           </div>
         </div>
       </nav>

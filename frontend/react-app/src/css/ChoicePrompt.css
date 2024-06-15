@@ -41,28 +41,27 @@
 }
 
 .choice-a:hover {
-  transform: scale(1.05);
+  background-color: var(--accent-color-dark);
 }
 
 .choice-a:focus {
   outline: none;
   background-color: var(--accent-color-dark);
-  transform: scale(1.05);
 }
 
 .choice-b:hover {
-  transform: scale(1.05);
+  background-color: #e0e0e0;
 }
 
 .choice-b:focus {
   outline: none;
   background-color: #e0e0e0;
-  transform: scale(1.05);
 }
 
 .info {
   margin-top: 3rem;
   color: var(--primary-color);
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 400;
+  max-width:70%;
 }

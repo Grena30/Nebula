@@ -29,6 +29,7 @@
   letter-spacing: 3px;
   font-size: 1.3em;
   margin-top: 3em;
+  border-radius: 5px;
 }
 
 .header-button:hover {

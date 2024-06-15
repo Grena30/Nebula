@@ -1,4 +1,3 @@
-// src/components/ChoicePrompt.jsx
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import "../css/ChoicePrompt.css";
@@ -17,7 +16,7 @@ function ChoicePrompt({ optionA, optionB, infoA, infoB }) {
   };
 
   return (
-    <div>
+    <div id="choice-prompt">
       <div className="question">Would you rather drive a ...</div>
       <div className="choice-prompt">
         <div
