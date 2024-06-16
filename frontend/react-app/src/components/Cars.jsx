@@ -1,9 +1,9 @@
-import React from 'react';
+import CarList from "./CarList";
 
 function Cars() {
   return (
     <div>
-      <h1>Cars Page</h1>
+      <CarList />
     </div>
   );
 }

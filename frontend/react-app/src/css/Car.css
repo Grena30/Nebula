@@ -1,0 +1,14 @@
+ .car-card {
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  margin-right: 6rem;
+  margin-top: 2.5rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
+ }
+
+ .car-img {
+  max-width: 300px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+ }

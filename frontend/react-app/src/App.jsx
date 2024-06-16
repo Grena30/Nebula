@@ -1,10 +1,9 @@
-import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./components/pages/Home";
 import Tutorial from "./components/pages/Tutorial";
-import Cars from "./components/pages/Cars";
+import Cars from "./components/Cars";
 import "./css/App.css";
 
 function App() {
