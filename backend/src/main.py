@@ -1,6 +1,6 @@
 import cohere 
 import dotenv
-from response_parser import parse_response
+from src.response_parser import parse_response
 
 config = dotenv.dotenv_values()
 
@@ -62,9 +62,9 @@ def llm_prompt(car_filters, additional=None):
       result += event.text
   return result    
 
-
-car_filters = {"Brand": "Mercedes", "Body Type": "SUV"}
-# additional = "Suitable for 2 kids"
-data=llm_prompt(car_filters)
-parsed_data=parse_response(data)
-print(parsed_data)
+if __name__ == "__main__":
+  car_filters = {"Brand": "Mercedes", "Body Type": "SUV"}
+  # additional = "Suitable for 2 kids"
+  data=llm_prompt(car_filters)
+  parsed_data=parse_response(data)
+  print(parsed_data)

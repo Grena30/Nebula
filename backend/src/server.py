@@ -1,21 +1,21 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
+from src.main import llm_prompt
+from src.response_parser import parse_response
 
 
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})
 
-@app.route('/api/search', methods=['POST'])
+@app.route('/api/search', methods=['GET'])
 def search():
     data = request.get_json()
-    # prompt = "Show me cars that satisfy the following criteria: "
+    response: dict = None
+    if "additional" in data.keys():
+        additional = data["additional"]
+        data.pop("additional")
+        response = llm_prompt(data, additional)
+    else:
+        response = llm_prompt(data)
 
-    # for key, value in data.items():
-    #     if key != "additional":
-    #         prompt += f"{key} is {value}, "
-    #     else:
-    #         prompt += f" with additional requirements being: {value}"
-
-    # process the data for the model
-
-    return ...
+    return jsonify(parse_response(response))
