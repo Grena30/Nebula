@@ -1,0 +1,103 @@
+[
+    {
+        "brand": "Rolls-Royce",
+        "model": "Phantom",
+        "body type": "Coupe",
+        "manufacturing year": "2024",
+        "class": "Luxury",
+        "price": "N/A",
+        "powertrain": "N/A",
+        "additional": "The Rolls-Royce Phantom is the ultimate in luxurious lifestyle driving, boldly floating down the road. It is the perfect car for flaunting your wealth, whether you are old money or nouveau riche."
+    },
+    {
+        "brand": "Bentley",
+        "model": "Continental GT",
+        "body type": "Convertible",
+        "manufacturing year": "2024",
+        "class": "Luxury",
+        "price": "N/A",
+        "powertrain": "N/A",
+        "additional": "The Bentley Continental GT is the perfect car for a long drive, offering both a coupe and convertible option. It combines luxury with dynamic performance and is one of the best luxury cars money can buy."
+    },
+    {
+        "brand": "Mercedes-Benz",
+        "model": "S-Class",
+        "body type": "Sedan",
+        "manufacturing year": "2024",
+        "class": "Luxury",
+        "price": "N/A",
+        "powertrain": "N/A",
+        "additional": "The S-Class remains the favourite luxo-barge, offering a fine blend of luxury and performance. It is a world-class limo, with only a few frustrating details holding it back from perfection."
+    },
+    {
+        "brand": "Aston Martin",
+        "model": "DB12",
+        "body type": "Grand Tourer",
+        "manufacturing year": "2024",
+        "class": "Luxury",
+        "price": "N/A",
+        "powertrain": "V8 engine",
+        "additional": "The DB12 is a powerful and stylish replacement for the outgoing DB11. It offers a cushy ride and head-turning styling, making it an excellent choice for those seeking a blend of performance and luxury."
+    },
+    {
+        "brand": "Ferrari",
+        "model": "Purosangue",
+        "body type": "SUV",
+        "manufacturing year": "2024",
+        "class": "Luxury",
+        "price": "N/A",
+        "powertrain": "N/A",
+        "additional": "Ferrari's first SUV stays true to the brand's sporting ethos, offering a thrilling driving experience. Purists may be shocked by the Purosangue, but it is a welcome addition to the Ferrari lineup."
+    },
+    {
+        "brand": "Mercedes-Maybach",
+        "model": "EQS SUV",
+        "body type": "SUV",
+        "manufacturing year": "2024",
+        "class": "Luxury",
+        "price": "N/A",
+        "powertrain": "Electric",
+        "additional": "The Mercedes-Maybach EQS680 SUV is an ultra-luxury EV with a hefty price tag. If you're waiting for a luxurious electric vehicle, this may be the one for you."
+    },
+    {
+        "brand": "BMW",
+        "model": "Series 5",
+        "body type": "Sedan",
+        "manufacturing year": "2024",
+        "class": "Luxury",
+        "price": "$57,000",
+        "powertrain": "Petrol",
+        "additional": "The BMW Series 5 offers an exhilarating mix of tradition and transformation, with a sporty spirit and eco-friendly prowess. It is one of the most popular luxury car models and a great choice for those seeking a blend of performance and sustainability."
+    },
+    {
+        "brand": "Audi",
+        "model": "A3",
+        "body type": "Sedan",
+        "manufacturing year": "2024",
+        "class": "Luxury",
+        "price": "N/A",
+        "powertrain": "N/A",
+        "additional": "The Audi A3 is one of the best-selling cars of 2024 and a prominent choice in the luxury car market. Audi offers a range of first-rate interiors and high-performance versions, making it a great option for those seeking a practical yet luxurious vehicle."
+    },
+    {
+        "brand": "Tesla",
+        "model": "Model 3",
+        "body type": "Sedan",
+        "manufacturing year": "N/A",
+        "class": "Luxury",
+        "price": "N/A",
+        "powertrain": "Electric",
+        "additional": "Tesla's Model 3 offers sleek design and improved amenities, along with quick acceleration and a robust performance. It is a great choice for those seeking a combination of luxury and cutting-edge technology."
+    },
+    {
+        "brand": "Porsche",
+        "model": "Macan",
+        "body type": "SUV",
+        "manufacturing year": "N/A",
+        "class": "Luxury",
+        "price": "N/A",
+        "powertrain": "N/A",
+        "additional": "The Porsche Macan delivers on speed and luxury, with a powerful engine and a surprisingly smooth ride. It is a great choice for those seeking a high-performance SUV that doesn't compromise on comfort."
+    }
+]
+
