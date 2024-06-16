@@ -1,9 +1,9 @@
 import Car from "./Car";
 import "../css/CarList.css";
 import Search from "./Search";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-const CarList = () => {
+const CarList = ({ carsResults }) => {
   const carsJson = [
     {
       id: 1,
@@ -60,11 +60,23 @@ const CarList = () => {
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZQ5emwbtsv7iW9EUH4X2-xMnGKUlrsVWUSQ&s",
     },
   ];
-  const [cars, setCars] = useState(carsJson);
+  const [cars, setCars] = useState(() => {
+    if (carsResults) {
+      console.log("carsResults", carsResults);
+      return carsResults;
+    }
+    return carsJson;
+  });
+
+  useEffect(() => {
+    if (carsResults) {
+      setCars(carsResults);
+    }
+  }, [carsResults]);
 
   return (
     <div className="car-container">
-      <Search carsJson={carsJson} cars={cars} setCars={setCars} />
+      {/* <Search carsJson={carsJson} cars={cars} setCars={setCars} /> */}
       <div className="car-list">
         {cars.map((car) => (
           <Car key={car.id} car={car} />

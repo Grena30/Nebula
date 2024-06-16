@@ -7,8 +7,27 @@
   text-align: center;
  }
 
- .car-img {
+ .car-card-img {
   max-width: 300px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+ }
+
+.car-detail {
+  font-size: 0.9rem;
+  text-align-last: left;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+ .car-detail-text {
+  max-width: 300px;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  text-align: justify;
+  
+ }
+
+ .detail-highlight {
+  font-weight: bold;
  }

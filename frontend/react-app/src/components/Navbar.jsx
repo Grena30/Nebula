@@ -16,12 +16,12 @@ function Navbar() {
             <li>
               <Link to="/tutorial">Tutorial</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/cars">Cars</Link>
-            </li>
+            </li> */}
           </ul>
           <div className="navbar-btn">
-            <Link to="/cars">
+            <Link to="/shop">
               <button>Shop</button>
             </Link>
           </div>
