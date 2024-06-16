@@ -64,14 +64,13 @@ const CarList = () => {
 
   return (
     <div className="car-container">
-      <Search carsJson={carsJson} cars={cars} setCars={setCars} />  
+      <Search carsJson={carsJson} cars={cars} setCars={setCars} />
       <div className="car-list">
         {cars.map((car) => (
           <Car key={car.id} car={car} />
         ))}
         {cars.length === 0 && <h2 className="no-cars">No cars found</h2>}
       </div>
-
     </div>
   );
 };
