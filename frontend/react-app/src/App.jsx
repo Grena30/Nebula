@@ -5,6 +5,7 @@ import Home from "./components/pages/Home";
 import Tutorial from "./components/pages/Tutorial";
 import Cars from "./components/Cars";
 import "./css/App.css";
+import Shop from "./components/pages/Shop";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="tutorial" element={<Tutorial />} />
           <Route path="cars" element={<Cars />} />
+          <Route path="shop" element={<Shop />} />
         </Route>
       </Routes>
     </BrowserRouter>

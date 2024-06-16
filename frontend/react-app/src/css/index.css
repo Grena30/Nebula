@@ -26,3 +26,22 @@ body {
   width:80vw;
   margin: 0 auto;
 }
+
+.btn {
+  padding: 0.25rem 1rem;
+  margin-right: 1.5rem;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  color: var(--background-color);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  &.active {
+    background-color: var(--accent-color);
+  }
+}

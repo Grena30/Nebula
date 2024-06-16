@@ -1,0 +1,51 @@
+.shop-section {
+  padding-bottom: 5rem;
+}
+
+.form-group-title {
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.car-img-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.car-img-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.car-img {
+  max-width: 300px;
+  max-height: 150px;
+  margin-bottom: 1rem;
+}
+
+.btn-car-img-all {
+  margin-bottom: 1rem !important;
+}
+
+.additional-text-area {
+  padding: 0.5rem 0.5rem;
+  resize: none;
+  border-radius: 3px;
+  border: 2px solid var(--primary-color);
+  width: 35vw;
+  height: 30vh;
+
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
+}
+
+.btn-submit {
+  margin-top: 1rem;
+  width: 35vw;
+}
+
