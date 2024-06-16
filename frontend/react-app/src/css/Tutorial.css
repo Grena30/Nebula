@@ -1,28 +1,46 @@
 #tutorial {
-  background: linear-gradient(to right, var(--accent-color-light), #9907facc), url('../assets/tutorial_3.png') no-repeat center center/cover;
-  color: var(--background-color);
+  color: var(--primary-color);
   height: 100vh;
-  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding:10rem;
 }
 
 .tutorial-title {
-  margin-bottom: 1rem;
-  font-size: 1.75rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  max-width:50%;
+  text-align:center;
 }
 
 .tutorial-list-item {
-  font-size: 1.75rem;
+  font-size: 1.3rem;
   z-index: 2;
   position: relative;
+  padding-bottom:2.5rem;
+}
+
+.tutorial-list-item > span.bullet-point {
+  font-weight:700;
+  color: var(--primary-color );
+  text-decoration: underline;
 }
 
 .title-accent {
+  text-decoration: underline var(--accent-color);
   color: var(--accent-color);
-  background-color: var(--background-color);
   border-radius: 5px;
   padding: 0 0.5rem;
+}
+
+li::marker {
+  font-weight:700;
+}
+
+span.accent-word {
+  color: var(--accent-color);
+  /* font-weight: 700; */
 }
