@@ -7,7 +7,7 @@ from src.response_parser import parse_response
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})
 
-@app.route('/api/search', methods=['GET'])
+@app.route('/api/search', methods=['POST'])
 def search():
     data = request.get_json()
     response: dict = None
