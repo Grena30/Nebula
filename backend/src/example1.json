@@ -1,0 +1,92 @@
+[
+    {
+        "brand": "Honda",
+        "model": "Civic",
+        "body type": "Sedan",
+        "manufacturing year": "2024",
+        "class": "Compact",
+        "price": "$23,950 - $31,450",
+        "powertrain": "Petrol",
+        "additional": "The Honda Civic is a compact car with praiseworthy performance, high fuel economy, excellent passenger space, and a refined design. It is one of the best-selling vehicles of all time."
+    },
+    {
+        "brand": "Hyundai",
+        "model": "Elantra",
+        "body type": "Sedan",
+        "manufacturing year": "2024",
+        "class": "Compact",
+        "price": "$21,475 - $28,315",
+        "powertrain": "Petrol",
+        "additional": "The Hyundai Elantra is a comfortable and efficient compact car with a stylish design and impressive fuel economy. It is one of the highest-rated compact sedans."
+    },
+    {
+        "brand": "Toyota",
+        "model": "Camry",
+        "body type": "Sedan",
+        "manufacturing year": "2024",
+        "class": "Midsize",
+        "price": "N/A",
+        "powertrain": "Hybrid",
+        "additional": "The new Toyota Camry is a fuel-efficient evolution of the midsize sedan, now with a standard hybrid drivetrain. It has impressive mpg and a roomy and comfortable cabin."
+    },
+    {
+        "brand": "Kia",
+        "model": "K5",
+        "body type": "Sedan",
+        "manufacturing year": "2024",
+        "class": "Midsize",
+        "price": "N/A",
+        "powertrain": "N/A",
+        "additional": "The Kia K5 is an attractive and accomplished midsize sedan with an individual style. It is incredibly easy to drive and comfortable for long trips, making it a sensible and exciting choice."
+    },
+    {
+        "brand": "Honda",
+        "model": "Accord",
+        "body type": "Sedan",
+        "manufacturing year": "2024",
+        "class": "Midsize",
+        "price": "$27,895 - $29,910",
+        "powertrain": "Petrol",
+        "additional": "The Honda Accord is a well-rounded midsize sedan with a smooth ride, spacious interior, and great safety scores. It is the highest-rated midsize sedan and one of the best-selling cars in the US."
+    },
+    {
+        "brand": "BMW",
+        "model": "Series 5",
+        "body type": "Sedan",
+        "manufacturing year": "2024",
+        "class": "Midsize",
+        "price": "$58,895",
+        "powertrain": "Petrol",
+        "additional": "The BMW 5 Series is a luxurious midsize sedan with powerful engines and a full complement of in-car and driver safety tech. It is a \"Goldilocks\" sedan, falling between the full-size BMW 7 Series and the compact 3 Series."
+    },
+    {
+        "brand": "Genesis",
+        "model": "Electrified G80",
+        "body type": "Sedan",
+        "manufacturing year": "2024",
+        "class": "Midsize",
+        "price": "$75,625",
+        "powertrain": "Electric",
+        "additional": "The Genesis Electrified G80 is an all-electric version of the popular Genesis G80. It has a powerful all-wheel-drive, dual-motor powertrain and offers a luxurious, high-tech interior with impressive performance and efficiency."
+    },
+    {
+        "brand": "Mercedes-Benz",
+        "model": "C-Class",
+        "body type": "Sedan",
+        "manufacturing year": "2024",
+        "class": "Small Luxury",
+        "price": "$50,100",
+        "powertrain": "Petrol",
+        "additional": "The Mercedes-Benz C-Class is a refined small luxury sedan with a premium interior, potent power, and an efficient hybrid powertrain. It is positioned above the smaller CLA and below the E-Class."
+    },
+    {
+        "brand": "Audi",
+        "model": "A3",
+        "body type": "Sedan",
+        "manufacturing year": "2024",
+        "class": "Small Luxury",
+        "price": "$42,495",
+        "powertrain": "Petrol",
+        "additional": "The Audi A3 is a beautifully designed small luxury sedan with sporty handling and a premium interior. It has a powerful turbocharged four-cylinder engine and a high-tech infotainment system."
+    }
+]

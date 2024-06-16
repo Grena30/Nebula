@@ -1,3 +1,4 @@
+import json
 import cohere 
 import dotenv
 from src.response_parser import parse_response
@@ -13,7 +14,7 @@ co = cohere.Client(
 # Additionally I would like to add:
 
 def llm_prompt(car_filters, additional=None):
-  prompt_message = "Given that I want a car with the following specifications, give me a list of cars that have these specifications. Specifications:\n"
+  prompt_message = "Given that I want a car with the following specifications, give me a list of 10 cars that have these specifications. Specifications:\n"
   for k, v in car_filters.items():
     prompt_message += f"{k}: {v}\n"
 
@@ -33,10 +34,11 @@ def llm_prompt(car_filters, additional=None):
   # prompt_message += "<transmission type> Insert transmission type here</transmissison type>\n"
   # prompt_message += "<perfomance> Insert performance from 0-100 in seconds here</perfomanec>\n"
   # prompt_message += "<range> Insert range for consumption here</range>\n"
-  prompt_message += "<additional> Insert any additional info here</additional>\n"
+  prompt_message += "<additional> Insert non-technical details with an intriguing pitch about the car</additional>\n"
+  # prompt_message += "<pros and cons> Insert popular pros and cons of this car</pros and cons>\n"
   # prompt_message += "Important if you cannot specify exactly one category then approximate or give a range of values instead of not available. If you have any additional info for each car add the rest of the info to the additional part if not then leave empty\n"
   prompt_message += "Important! look up cars manufacturer website, or official dealer data for the most accurate information, search different kind of sources in order to find all the information\n"
-  # prompt_message += "If you cannot find the price and random one, but don't specify whether it is random\n"
+  # prompt_message += "Important rule! If you cannot find the price in dollars do not show the car and respect the customer price ranges\n"
   prompt_message += """Here is an example:
   <brand>Brand: BMW</brand>
   <model>Model: series5-sedan</model>
@@ -63,8 +65,8 @@ def llm_prompt(car_filters, additional=None):
   return result    
 
 if __name__ == "__main__":
-  car_filters = {"Brand": "Mercedes", "Body Type": "SUV"}
-  # additional = "Suitable for 2 kids"
+  car_filters = {"Body Type": "Sedan"}
+  additional = "I want a economic car for city that will not exceed 50 000 dollars"
   data=llm_prompt(car_filters)
   parsed_data=parse_response(data)
-  print(parsed_data)
+
